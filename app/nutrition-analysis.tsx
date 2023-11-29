@@ -3,16 +3,14 @@ import { Container, Main, Title, Subtitle, Button, ButtonText } from '../tamagui
 
 import { Link } from 'expo-router';
 
-export default function Index() {
+export default function NutritionAnalysis() {
   return (
-    <Container marginVertical="$5">
+    <Container>
       <Main>
-        <Main style={{ justifyContent: 'center' }}>
-          <YStack>
-            <Title>Healthy Eats</Title>
-            <Subtitle>Best app for healthy meals.</Subtitle>
-          </YStack>
-        </Main>
+        <YStack style={{ flex: 1, justifyContent: 'center', alignContent: 'center' }}>
+          <Title>Nutrition Analysis</Title>
+          <Subtitle>This is the first page of your app.</Subtitle>
+        </YStack>
         <Link href="/home" asChild>
           <Button>
             <ButtonText>Get Started</ButtonText>
